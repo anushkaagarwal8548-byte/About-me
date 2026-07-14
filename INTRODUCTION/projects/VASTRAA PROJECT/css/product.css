@@ -1,0 +1,351 @@
+.product-page {
+    background-color: #f8f5f2;
+}
+
+.product-hero {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e9ecef;
+    padding-block: 2.5rem;
+}
+
+.product-hero__title {
+    font-size: 40px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 0;
+}
+
+.product-hero__text {
+    color: #666666;
+    margin-bottom: 0.5rem;
+}
+
+.product-gallery,
+.product-summary,
+.product-panel {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(26, 26, 26, 0.08);
+    padding: 1.5rem;
+}
+
+.product-gallery__figure {
+    margin-bottom: 1rem;
+}
+
+.product-gallery__image {
+    width: 100%;
+    height: 560px;
+    object-fit: cover;
+    display: block;
+    border-radius: 12px;
+}
+
+.product-gallery__thumb {
+    display: block;
+    border: 1px solid #e9ecef;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.product-gallery__thumb:hover {
+    border-color: #6b2737;
+}
+
+.product-gallery__thumb-image {
+    width: 100%;
+    height: 92px;
+    object-fit: cover;
+    display: block;
+}
+
+.product-gallery__more {
+    margin-top: 1rem;
+}
+
+.product-gallery__small {
+    margin-bottom: 0;
+}
+
+.product-gallery__small-image {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    display: block;
+    border-radius: 12px;
+}
+
+.product-summary__category {
+    font-size: 0.9rem;
+    color: #666666;
+    margin-bottom: 0.5rem;
+}
+
+.product-summary__title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 0.75rem;
+}
+
+.product-summary__rating {
+    color: #c9a96e;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+.product-summary__rating-count {
+    color: #666666;
+    letter-spacing: normal;
+    margin-left: 0.35rem;
+    font-weight: 600;
+}
+
+.product-summary__price {
+    margin-bottom: 1rem;
+}
+
+.product-summary__price-current {
+    color: #6b2737;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.product-summary__price-old {
+    color: #666666;
+    font-size: 1rem;
+    text-decoration: line-through;
+    margin-left: 0.5rem;
+}
+
+.product-summary__text {
+    color: #495057;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.product-options__group {
+    border: none;
+    padding: 0;
+    margin-bottom: 1.25rem;
+}
+
+.product-options__title,
+.pincode-checker__label {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 0.75rem;
+    float: none;
+    width: 100%;
+}
+
+.product-options__choices {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.product-options__choices .form-check {
+    margin-right: 0;
+    margin-bottom: 0;
+    border: 1px solid #dee2e6;
+    border-radius: 12px;
+    padding: 0.65rem 1rem 0.65rem 2.2rem;
+}
+
+.product-options .form-check-input,
+.product-options__select,
+.pincode-checker .form-control {
+    border-color: #ced4da;
+}
+
+.product-options .form-check-input:checked {
+    background-color: #6b2737;
+    border-color: #6b2737;
+}
+
+.product-options .form-check-input:focus,
+.product-options__select:focus,
+.pincode-checker .form-control:focus {
+    border-color: #6b2737;
+    box-shadow: 0 0 0 0.2rem rgba(107, 39, 55, 0.2);
+}
+
+.product-options .form-check-label {
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.product-options__select {
+    max-width: 160px;
+}
+
+.product-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.product-actions .btn-dark {
+    background-color: #1a1a1a;
+    border-color: #1a1a1a;
+}
+
+.product-actions .btn-dark:hover,
+.pincode-checker .btn-outline-dark:hover {
+    background-color: #6b2737;
+    border-color: #6b2737;
+}
+
+.product-actions .btn-outline-dark {
+    border-color: #1a1a1a;
+    color: #1a1a1a;
+}
+
+.pincode-checker {
+    border-top: 1px solid #e9ecef;
+    padding-top: 1.5rem;
+}
+
+.pincode-checker__text {
+    color: #666666;
+    font-size: 0.9rem;
+    margin-top: 0.75rem;
+    margin-bottom: 0;
+}
+
+.product-panel__title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+}
+
+.product-panel__list {
+    color: #495057;
+    line-height: 1.9;
+    padding-left: 1.25rem;
+}
+
+.rating-summary {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.rating-summary__score {
+    min-width: 150px;
+}
+
+.rating-summary__number {
+    display: block;
+    color: #1a1a1a;
+    font-size: 40px;
+    line-height: 1;
+    margin-bottom: 0.35rem;
+}
+
+.rating-summary__score span {
+    color: #c9a96e;
+    letter-spacing: 1px;
+}
+
+.rating-summary__score p {
+    color: #666666;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
+
+.rating-bars {
+    flex-grow: 1;
+}
+
+.rating-bars__item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.65rem;
+    color: #495057;
+    font-size: 0.9rem;
+}
+
+.rating-bars__label {
+    width: 54px;
+}
+
+.rating-bars__percent {
+    width: 38px;
+    text-align: right;
+}
+
+.rating-bars__track {
+    flex-grow: 1;
+    height: 8px;
+    background-color: #e9ecef;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.rating-bars__fill {
+    display: block;
+    height: 100%;
+    background-color: #6b2737;
+    border-radius: 12px;
+}
+
+.rating-bars__fill--five {
+    width: 78%;
+}
+
+.rating-bars__fill--four {
+    width: 16%;
+}
+
+.rating-bars__fill--three {
+    width: 4%;
+}
+
+.rating-bars__fill--two {
+    width: 1%;
+}
+
+.rating-bars__fill--one {
+    width: 1%;
+}
+
+@media (max-width: 991.98px) {
+    .product-gallery__image {
+        height: 480px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .product-hero {
+        padding-block: 2rem;
+        text-align: center;
+    }
+
+    .product-gallery__image {
+        height: 360px;
+    }
+
+    .product-gallery__thumb-image {
+        height: 72px;
+    }
+
+    .product-summary__title {
+        font-size: 28px;
+    }
+
+    .product-actions .btn {
+        width: 100%;
+    }
+
+    .rating-summary {
+        flex-direction: column;
+    }
+}

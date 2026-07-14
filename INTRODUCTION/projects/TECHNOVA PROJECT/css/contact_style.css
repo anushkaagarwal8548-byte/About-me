@@ -1,0 +1,39 @@
+nav {
+    width: 100%;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+* {
+    background-color: aliceblue;
+}
+
+h1 {
+    color: rgba(12, 12, 92, 0.934);
+    font-size: 60px;
+}
+
+#contact-table {
+    border: 1px solid black;
+    table-layout: fixed;
+    width: 80%;
+    margin: 20px auto;
+    height: 200px;
+}
+
+#contact-table th, #contact-table td {
+    border: 1px solid black;
+    padding: 12px;
+    text-align: left;
+    font-size: 18px;
+    font-family:Arial, Helvetica, sans-serif;
+}

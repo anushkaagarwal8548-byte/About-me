@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Provide your shipping address and payment details to place your order securely at Vastraa.">
+    <title>Vastraa | Secure Checkout</title>
+    <link rel="stylesheet" href="../css/bootstrap (1).css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/checkout.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom" aria-label="Main navigation">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-uppercase" href="index.html">Vastraa</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                        <li class="nav-item"><a class="nav-link" href="product.html">Product Details</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                        <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="checkout.html" aria-current="page">Checkout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="checkout-page">
+        <section class="checkout-hero py-4 border-bottom bg-white mb-4" aria-labelledby="checkout-heading">
+            <div class="container">
+                <h1 id="checkout-heading" class="checkout-hero__title">Checkout</h1>
+                <p class="checkout-hero__text">Please fill out your delivery details and choose your preferred payment method.</p>
+            </div>
+        </section>
+
+        <div class="container py-4">
+            <div class="step-indicator" aria-label="Checkout Progress">
+                <div class="step-node step-node--completed">
+                    <div class="step-node__circle">1</div>
+                    <span class="step-node__label">Cart Items</span>
+                </div>
+                <div class="step-node step-node--active">
+                    <div class="step-node__circle">2</div>
+                    <span class="step-node__label">Details</span>
+                </div>
+                <div class="step-node">
+                    <div class="step-node__circle">3</div>
+                    <span class="step-node__label">Confirmation</span>
+                </div>
+            </div>
+
+            <form action="checkout.html" method="get">
+                <div class="row g-4">
+                    <div class="col-lg-8">
+                        <div class="checkout-card">
+                            <h2 class="checkout-card__title">1. Shipping Address</h2>
+                            <div class="row g-3">
+                                <div class="col-sm-6">
+                                    <label for="ship-first" class="form-label">First Name</label>
+                                    <input type="text" class="form-control" id="ship-first" name="first_name" required placeholder="First Name">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="ship-last" class="form-label">Last Name</label>
+                                    <input type="text" class="form-control" id="ship-last" name="last_name" required placeholder="Last Name">
+                                </div>
+                                <div class="col-12">
+                                    <label for="ship-addr1" class="form-label">Address Line 1</label>
+                                    <input type="text" class="form-control" id="ship-addr1" name="address1" required placeholder="123 Main St, Apartment, Suite">
+                                </div>
+                                <div class="col-12">
+                                    <label for="ship-addr2" class="form-label">Address Line 2 (Optional)</label>
+                                    <input type="text" class="form-control" id="ship-addr2" name="address2" placeholder="Building name, landmark etc.">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="ship-city" class="form-label">City</label>
+                                    <input type="text" class="form-control" id="ship-city" name="city" required placeholder="City">
+                                </div>
+                                <div class="col-sm-3">
+                                    <label for="ship-state" class="form-label">State</label>
+                                    <select class="form-select" id="ship-state" name="state" required>
+                                        <option value="" disabled selected>Select State</option>
+                                        <option value="Delhi">Delhi</option>
+                                        <option value="Maharashtra">Maharashtra</option>
+                                        <option value="Karnataka">Karnataka</option>
+                                        <option value="TamilNadu">Tamil Nadu</option>
+                                        <option value="UttarPradesh">Uttar Pradesh</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-3">
+                                    <label for="ship-zip" class="form-label">ZIP / Postal Code</label>
+                                    <input type="text" class="form-control" id="ship-zip" name="zip" required placeholder="110001">
+                                </div>
+                                <div class="col-12">
+                                    <label for="ship-phone" class="form-label">Phone Number (for shipping alerts)</label>
+                                    <input type="tel" class="form-control" id="ship-phone" name="phone" required placeholder="e.g. +91 9876543210">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="checkout-card">
+                            <h2 class="checkout-card__title">2. Payment Method</h2>
+                            <div class="payment-methods-list">
+                                <div class="payment-method-card">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="payment_method" id="pay-card" value="card" checked>
+                                        <label class="form-check-label fw-bold d-block" for="pay-card">
+                                            Credit / Debit Card
+                                            <span class="d-block text-muted fw-normal small mt-1">Pay securely with Visa, MasterCard, or RuPay</span>
+                                        </label>
+                                    </div>
+                                    <div class="row g-3 mt-2">
+                                        <div class="col-12">
+                                            <label for="card-holder" class="form-label">Name on Card</label>
+                                            <input type="text" class="form-control" id="card-holder" name="card_name" placeholder="John Doe">
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="card-num" class="form-label">Card Number</label>
+                                            <input type="text" class="form-control" id="card-num" name="card_number" placeholder="1234 5678 9101 1121">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label for="card-exp" class="form-label">Expiration Date</label>
+                                            <input type="text" class="form-control" id="card-exp" name="card_expiry" placeholder="MM/YY">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label for="card-cvv" class="form-label">CVV / Security Code</label>
+                                            <input type="password" class="form-control" id="card-cvv" name="card_cvv" placeholder="•••">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="payment-method-card">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="payment_method" id="pay-upi" value="upi">
+                                        <label class="form-check-label fw-bold d-block" for="pay-upi">
+                                            UPI (BHIM, Google Pay, PhonePe)
+                                            <span class="d-block text-muted fw-normal small mt-1">Instant digital payment using UPI ID</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="payment-method-card">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="payment_method" id="pay-netbank" value="netbank">
+                                        <label class="form-check-label fw-bold d-block" for="pay-netbank">
+                                            Net Banking
+                                            <span class="d-block text-muted fw-normal small mt-1">Secure redirection to your bank's login portal</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="payment-method-card">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="payment_method" id="pay-cod" value="cod">
+                                        <label class="form-check-label fw-bold d-block" for="pay-cod">
+                                            Cash on Delivery (COD)
+                                            <span class="d-block text-muted fw-normal small mt-1">Pay when your delivery agent arrives</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="checkout-summary-card">
+                            <h2 class="checkout-summary-card__title">Order Summary</h2>
+                            <div class="checkout-items-list mb-3">
+                                <div class="checkout-item">
+                                    <div class="checkout-item__details">
+                                        <h3 class="checkout-item__title">Linen Wrap Dress</h3>
+                                        <span class="checkout-item__meta">Size: M &middot; Qty: 1</span>
+                                    </div>
+                                    <span class="checkout-item__price">₹2,499</span>
+                                </div>
+                                <div class="checkout-item">
+                                    <div class="checkout-item__details">
+                                        <h3 class="checkout-item__title">Tailored Blazer</h3>
+                                        <span class="checkout-item__meta">Size: L &middot; Qty: 1</span>
+                                    </div>
+                                    <span class="checkout-item__price">₹3,899</span>
+                                </div>
+                                <div class="checkout-item">
+                                    <div class="checkout-item__details">
+                                        <h3 class="checkout-item__title">Leather Tote Bag</h3>
+                                        <span class="checkout-item__meta">Qty: 1</span>
+                                    </div>
+                                    <span class="checkout-item__price">₹1,799</span>
+                                </div>
+                            </div>
+                            <div class="checkout-row">
+                                <span>Subtotal</span>
+                                <span>₹8,197</span>
+                            </div>
+                            <div class="checkout-row">
+                                <span>Delivery Fee</span>
+                                <span>₹150</span>
+                            </div>
+                            <div class="checkout-row">
+                                <span>Taxes</span>
+                                <span>₹0</span>
+                            </div>
+                            <div class="checkout-row checkout-row--total">
+                                <span>Total</span>
+                                <span class="price">₹8,347</span>
+                            </div>
+
+                            <button type="submit" class="btn btn-dark w-100 place-order-btn">Place Order</button>
+                            <p class="text-muted text-center small mt-3 mb-0">By placing order, you agree to the Vastraa Terms of Service.</p>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="site-footer py-4 border-top">
+        <div class="container text-center">
+            <p class="site-footer__brand mb-1">Vastraa</p>
+            <p class="site-footer__copy mb-0">&copy; 2026 Vastraa. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

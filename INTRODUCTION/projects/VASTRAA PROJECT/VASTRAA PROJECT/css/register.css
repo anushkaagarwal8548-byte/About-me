@@ -1,0 +1,111 @@
+.register-page {
+    background-color: #f8f5f2;
+}
+
+.register-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(26, 26, 26, 0.08);
+    padding: 2.5rem;
+    border: none;
+    margin-block: 2rem;
+}
+
+.register-card__header {
+    margin-bottom: 2rem;
+}
+
+.register-card__title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+}
+
+.register-card__subtitle {
+    color: #6c757d;
+    font-size: 0.95rem;
+    margin-bottom: 0;
+}
+
+.form-control {
+    border-color: #dee2e6;
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #6b2737;
+    box-shadow: 0 0 0 0.2rem rgba(107, 39, 55, 0.15);
+    outline: none;
+}
+
+.form-floating > .form-control {
+    padding: 1rem 0.75rem;
+}
+
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label {
+    color: #6b2737;
+    opacity: 0.8;
+}
+
+.form-check-input {
+    border-color: #ced4da;
+    cursor: pointer;
+}
+
+.form-check-input:checked {
+    background-color: #6b2737;
+    border-color: #6b2737;
+}
+
+.form-check-input:focus {
+    border-color: #6b2737;
+    box-shadow: 0 0 0 0.2rem rgba(107, 39, 55, 0.15);
+}
+
+.form-check-label {
+    font-size: 0.9rem;
+    color: #495057;
+    cursor: pointer;
+}
+
+.register-btn {
+    background-color: #1a1a1a;
+    border-color: #1a1a1a;
+    font-weight: 600;
+    padding: 0.75rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.register-btn:hover {
+    background-color: #6b2737;
+    border-color: #6b2737;
+}
+
+.sign-in-text {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.sign-in-link {
+    color: #6b2737;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.sign-in-link:hover {
+    color: #4a1a26;
+    text-decoration: underline;
+}
+
+@media (max-width: 575.98px) {
+    .register-card {
+        padding: 1.5rem;
+        margin-block: 1rem;
+    }
+}

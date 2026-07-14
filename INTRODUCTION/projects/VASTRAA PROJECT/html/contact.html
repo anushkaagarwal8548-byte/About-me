@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with the Vastraa support team, find our physical locations, and access answers to common questions.">
+    <title>Vastraa | Contact Us</title>
+    <link rel="stylesheet" href="../css/bootstrap (1).css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contact.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom" aria-label="Main navigation">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-uppercase" href="index.html">Vastraa</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                        <li class="nav-item"><a class="nav-link" href="product.html">Product Details</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                        <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="contact.html" aria-current="page">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="checkout.html">Checkout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="contact-page">
+        <section class="contact-hero py-4 border-bottom bg-white mb-4" aria-labelledby="contact-heading">
+            <div class="container">
+                <h1 id="contact-heading" class="contact-hero__title">Contact Us</h1>
+                <p class="contact-hero__text">We'd love to hear from you. Get in touch with our customer service team or search our support guidelines.</p>
+            </div>
+        </section>
+
+        <div class="container py-4">
+            <div class="row g-4">
+                <section class="col-lg-7" aria-labelledby="form-heading">
+                    <div class="contact-card">
+                        <h2 id="form-heading" class="contact-card__title">Send Us a Message</h2>
+                        <form action="contact.html" method="get" class="contact-form">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="contact-name" class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" id="contact-name" name="name" required placeholder="John Doe">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="contact-email" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="contact-email" name="email" required placeholder="name@example.com">
+                                </div>
+                                <div class="col-12">
+                                    <label for="contact-subject" class="form-label">Subject</label>
+                                    <input type="text" class="form-control" id="contact-subject" name="subject" required placeholder="Order query, feedback etc.">
+                                </div>
+                                <div class="col-12">
+                                    <label for="contact-message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="contact-message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-dark w-100 contact-btn">Submit Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+
+                <aside class="col-lg-5">
+                    <div class="quick-contact-card mb-4">
+                        <h2 class="quick-contact-card__title">Quick Contact Details</h2>
+                        <div class="quick-contact-list">
+                            <div class="quick-contact-item">
+                                <span class="quick-contact-item__icon" aria-hidden="true">📞</span>
+                                <div class="quick-contact-item__details">
+                                    <span class="quick-contact-item__title">Call Us</span>
+                                    <p class="quick-contact-item__value">
+                                        <a href="tel:+919876543210">+91 98765 43210</a><br>
+                                        Mon – Sat: 9:00 AM to 6:00 PM IST
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="quick-contact-item">
+                                <span class="quick-contact-item__icon" aria-hidden="true">✉️</span>
+                                <div class="quick-contact-item__details">
+                                    <span class="quick-contact-item__title">Email Support</span>
+                                    <p class="quick-contact-item__value">
+                                        <a href="mailto:support@vastraa.com">support@vastraa.com</a><br>
+                                        We reply within 24-48 hours
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="quick-contact-item">
+                                <span class="quick-contact-item__icon" aria-hidden="true">📍</span>
+                                <div class="quick-contact-item__details">
+                                    <span class="quick-contact-item__title">Corporate Office</span>
+                                    <p class="quick-contact-item__value">
+                                        Vastraa Apparels Pvt. Ltd.<br>
+                                        102 Fashion Boulevard, Connaught Place,<br>
+                                        New Delhi, DL 110001, India
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-card">
+                        <h2 class="faq-card__title">Frequently Asked Questions</h2>
+                        <div class="faq-link-list">
+                            <a href="faq.html#orders" class="faq-link-item">
+                                How do I track my order?
+                                <span class="faq-link-item__arrow" aria-hidden="true">➔</span>
+                            </a>
+                            <a href="faq.html#returns" class="faq-link-item">
+                                What is the returns policy?
+                                <span class="faq-link-item__arrow" aria-hidden="true">➔</span>
+                            </a>
+                            <a href="faq.html#shipping" class="faq-link-item">
+                                Do you ship internationally?
+                                <span class="faq-link-item__arrow" aria-hidden="true">➔</span>
+                            </a>
+                            <a href="faq.html#payments" class="faq-link-item">
+                                What payment methods do you accept?
+                                <span class="faq-link-item__arrow" aria-hidden="true">➔</span>
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer py-4 border-top">
+        <div class="container text-center">
+            <p class="site-footer__brand mb-1">Vastraa</p>
+            <p class="site-footer__copy mb-0">&copy; 2026 Vastraa. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

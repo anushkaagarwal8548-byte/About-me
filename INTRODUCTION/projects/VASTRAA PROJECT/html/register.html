@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Create a new Vastraa account to access exclusive offers, save addresses, and track your orders.">
+    <title>Vastraa | Register</title>
+    <link rel="stylesheet" href="../css/bootstrap (1).css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/register.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom" aria-label="Main navigation">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-uppercase" href="index.html">Vastraa</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                        <li class="nav-item"><a class="nav-link" href="product.html">Product Details</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="register.html" aria-current="page">Register</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="checkout.html">Checkout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="register-page py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-7 col-lg-6">
+                    <div class="register-card">
+                        <header class="register-card__header text-center">
+                            <h1 class="register-card__title">Create Account</h1>
+                            <p class="register-card__subtitle">Join Vastraa for a personalized shopping experience</p>
+                        </header>
+
+                        <form action="register.html" method="post" class="register-form">
+                            
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="reg-name" name="name" required placeholder="Full Name">
+                                <label for="reg-name">Full Name</label>
+                            </div>
+
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="reg-email" name="email" required placeholder="name@example.com">
+                                <label for="reg-email">Email Address</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control" id="reg-password" name="password" minlength="8" required placeholder="••••••••">
+                                <label for="reg-password">Password (min 8 chars)</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control" id="reg-confirm" name="confirm_password" minlength="8" required placeholder="••••••••">
+                                <label for="reg-confirm">Confirm Password</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" id="reg-address" name="address" required placeholder="Delivery Address" style="height: 100px;"></textarea>
+                                <label for="reg-address">Delivery Address</label>
+                            </div>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" role="switch" id="newsletter-switch" name="subscribe" checked>
+                                <label class="form-check-label" for="newsletter-switch">Subscribe to our newsletter for style updates</label>
+                            </div>
+                            <div class="form-check form-switch mb-4">
+                                <input class="form-check-input" type="checkbox" role="switch" id="terms-switch" name="terms" required>
+                                <label class="form-check-label" for="terms-switch">I accept the terms and conditions</label>
+                            </div>
+
+                            <button type="submit" class="btn btn-dark w-100 register-btn mb-3">Sign Up</button>
+
+                            <p class="text-center mb-0 sign-in-text">
+                                Already have an account? <a href="login.html" class="sign-in-link">Sign In</a>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer py-4 border-top">
+        <div class="container text-center">
+            <p class="site-footer__brand mb-1">Vastraa</p>
+            <p class="site-footer__copy mb-0">&copy; 2026 Vastraa. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

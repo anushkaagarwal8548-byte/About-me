@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shop curated fashion at Vastraa — filter by category, brand, price, and rating.">
+    <title>Vastraa | Shop</title>
+    <link rel="stylesheet" href="../css/bootstrap (1).css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/shop.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom" aria-label="Main navigation">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-uppercase" href="index.html">Vastraa</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="shop.html" aria-current="page">Shop</a></li>
+                        <li class="nav-item"><a class="nav-link" href="product.html">Product Details</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                        <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="checkout.html">Checkout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="shop-page">
+        <section class="shop-hero" aria-labelledby="shop-heading">
+            <div class="container">
+                <h1 id="shop-heading" class="shop-hero__title">Shop All Products</h1>
+                <p class="shop-hero__text">Browse our full collection and refine results using the filters below.</p>
+            </div>
+        </section>
+
+        <div class="container shop-layout py-4 py-lg-5">
+            <div class="row g-4">
+                <aside class="col-lg-3" aria-label="Product filters">
+                    <div class="shop-sidebar">
+                        <header class="shop-sidebar__header">
+                            <h2 class="shop-sidebar__title">Filters</h2>
+                            <a class="shop-sidebar__clear" href="shop.html">Clear All</a>
+                        </header>
+
+                        <form class="shop-filters" action="shop.html" method="get">
+                            <fieldset class="filter-group">
+                                <legend class="filter-group__title">Category</legend>
+                                <ul class="filter-group__list list-unstyled mb-0">
+                                    <li class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="category" id="cat-women" value="women">
+                                        <label class="form-check-label" for="cat-women">Women</label>
+                                    </li>
+                                    <li class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="category" id="cat-men" value="men">
+                                        <label class="form-check-label" for="cat-men">Men</label>
+                                    </li>
+                                    <li class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="category" id="cat-kids" value="kids">
+                                        <label class="form-check-label" for="cat-kids">Kids</label>
+                                    </li>
+                                    <li class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="category" id="cat-footwear" value="footwear">
+                                        <label class="form-check-label" for="cat-footwear">Footwear</label>
+                                    </li>
+                                    <li class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="category" id="cat-accessories" value="accessories">
+                                        <label class="form-check-label" for="cat-accessories">Accessories</label>
+                                    </li>
+                                    <li class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="category" id="cat-ethnic" value="ethnic">
+                                        <label class="form-check-label" for="cat-ethnic">Ethnic</label>
+                                    </li>
+                                </ul>
+                            </fieldset>
+
+                            <fieldset class="filter-group">
+                                <legend class="filter-group__title">Brand</legend>
+                                <ul class="filter-group__list list-unstyled mb-0">
+                                    <li class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="brand" id="brand-vastraa" value="vastraa">
+                                        <label class="form-check-label" for="brand-vastraa">Vastraa</label>
+                                    </li>
+                                    <li class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="brand" id="brand-urban" value="urban-edge">
+                                        <label class="form-check-label" for="brand-urban">Urban Edge</label>
+                                    </li>
+                                    <li class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="brand" id="brand-classic" value="classic-line">
+                                        <label class="form-check-label" for="brand-classic">Classic Line</label>
+                                    </li>
+                                    <li class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="brand" id="brand-heritage" value="heritage">
+                                        <label class="form-check-label" for="brand-heritage">Heritage</label>
+                                    </li>
+                                    <li class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="brand" id="brand-nomad" value="nomad">
+                                        <label class="form-check-label" for="brand-nomad">Nomad</label>
+                                    </li>
+                                </ul>
+                            </fieldset>
+
+                            <fieldset class="filter-group">
+                                <legend class="filter-group__title">Price</legend>
+                                <ul class="filter-group__list list-unstyled mb-0">
+                                    <li class="form-check">
+                                        <input class="form-check-input" type="radio" name="price" id="price-under-1000" value="under-1000">
+                                        <label class="form-check-label" for="price-under-1000">Under ₹1,000</label>
+                                    </li>
+                                    <li class="form-check">
+                                        <input class="form-check-input" type="radio" name="price" id="price-1000-2500" value="1000-2500">
+                                        <label class="form-check-label" for="price-1000-2500">₹1,000 – ₹2,500</label>
+                                    </li>
+                                    <li class="form-check">
+                                        <input class="form-check-input" type="radio" name="price" id="price-2500-5000" value="2500-5000">
+                                        <label class="form-check-label" for="price-2500-5000">₹2,500 – ₹5,000</label>
+                                    </li>
+                                    <li class="form-check">
+                                        <input class="form-check-input" type="radio" name="price" id="price-above-5000" value="above-5000">
+                                        <label class="form-check-label" for="price-above-5000">Above ₹5,000</label>
+                                    </li>
+                                </ul>
+                            </fieldset>
+
+                            <fieldset class="filter-group filter-group--last">
+                                <legend class="filter-group__title">Rating</legend>
+                                <ul class="filter-group__list list-unstyled mb-0">
+                                    <li class="form-check">
+                                        <input class="form-check-input" type="radio" name="rating" id="rating-4" value="4">
+                                        <label class="form-check-label filter-rating" for="rating-4">
+                                            <span class="filter-rating__stars" aria-hidden="true">★★★★☆</span>
+                                            <span class="visually-hidden">4 stars and up</span>
+                                            4 &amp; up
+                                        </label>
+                                    </li>
+                                    <li class="form-check">
+                                        <input class="form-check-input" type="radio" name="rating" id="rating-3" value="3">
+                                        <label class="form-check-label filter-rating" for="rating-3">
+                                            <span class="filter-rating__stars" aria-hidden="true">★★★☆☆</span>
+                                            <span class="visually-hidden">3 stars and up</span>
+                                            3 &amp; up
+                                        </label>
+                                    </li>
+                                    <li class="form-check">
+                                        <input class="form-check-input" type="radio" name="rating" id="rating-2" value="2">
+                                        <label class="form-check-label filter-rating" for="rating-2">
+                                            <span class="filter-rating__stars" aria-hidden="true">★★☆☆☆</span>
+                                            <span class="visually-hidden">2 stars and up</span>
+                                            2 &amp; up
+                                        </label>
+                                    </li>
+                                </ul>
+                            </fieldset>
+
+                            <button type="submit" class="btn btn-dark w-100 shop-filters__submit">Apply Filters</button>
+                        </form>
+                    </div>
+                </aside>
+
+                <section class="col-lg-9" aria-labelledby="products-heading">
+                    <header class="shop-toolbar">
+                        <div class="shop-toolbar__info">
+                            <h2 id="products-heading" class="shop-toolbar__title">All Products</h2>
+                            <p class="shop-toolbar__count">Showing 1–8 of 24 products</p>
+                        </div>
+                        <div class="shop-toolbar__sort">
+                            <label class="shop-toolbar__sort-label" for="sort-by">Sort by:</label>
+                            <select class="form-select shop-toolbar__select" id="sort-by" name="sort" form="shop-sort-form" aria-label="Sort products">
+                                <option value="featured" selected>Featured</option>
+                                <option value="price-low">Price: Low to High</option>
+                                <option value="price-high">Price: High to Low</option>
+                                <option value="newest">Newest Arrivals</option>
+                                <option value="rating">Top Rated</option>
+                                <option value="name-az">Name: A – Z</option>
+                            </select>
+                        </div>
+                    </header>
+
+                    <form id="shop-sort-form" action="shop.html" method="get" class="visually-hidden" aria-hidden="true"></form>
+
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-3 g-4 shop-grid">
+                        <article class="col">
+                            <div class="product-card">
+                                <a class="product-card__image-link" href="product.html#linen-wrap-dress">
+                                    <img src="../images/products/linen-dress.jpg" alt="Linen blend wrap dress in sage green" class="product-card__image" loading="lazy">
+                                    <span class="product-card__badge">Trending</span>
+                                </a>
+                                <div class="product-card__body">
+                                    <h3 class="product-card__title"><a href="product.html#linen-wrap-dress">Linen Wrap Dress</a></h3>
+                                    <p class="product-card__category">Women · Dresses · Vastraa</p>
+                                    <p class="shop-rating" aria-label="Rated 4.8 out of 5 stars">★★★★★ <span>4.8</span></p>
+                                    <div class="product-card__footer">
+                                        <p class="product-card__price"><span class="product-card__price-current">₹2,499</span> <span class="product-card__price-old">₹3,199</span></p>
+                                        <a class="btn btn-sm btn-dark" href="cart.html">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col">
+                            <div class="product-card">
+                                <a class="product-card__image-link" href="product.html#tailored-blazer">
+                                    <img src="../images/products/blazer.jpg" alt="Classic tailored blazer in charcoal" class="product-card__image" loading="lazy">
+                                </a>
+                                <div class="product-card__body">
+                                    <h3 class="product-card__title"><a href="product.html#tailored-blazer">Tailored Blazer</a></h3>
+                                    <p class="product-card__category">Men · Formal · Classic Line</p>
+                                    <p class="shop-rating" aria-label="Rated 4.5 out of 5 stars">★★★★☆ <span>4.5</span></p>
+                                    <div class="product-card__footer">
+                                        <p class="product-card__price"><span class="product-card__price-current">₹3,899</span></p>
+                                        <a class="btn btn-sm btn-dark" href="cart.html">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col">
+                            <div class="product-card">
+                                <a class="product-card__image-link" href="product.html#velocity-sneakers">
+                                    <img src="../images/products/sneakers.jpg" alt="Red running sneakers with white sole" class="product-card__image" loading="lazy">
+                                    <span class="product-card__badge product-card__badge--sale">Sale</span>
+                                </a>
+                                <div class="product-card__body">
+                                    <h3 class="product-card__title"><a href="product.html#velocity-sneakers">Velocity Sneakers</a></h3>
+                                    <p class="product-card__category">Footwear · Sports · Nomad</p>
+                                    <p class="shop-rating" aria-label="Rated 4.7 out of 5 stars">★★★★★ <span>4.7</span></p>
+                                    <div class="product-card__footer">
+                                        <p class="product-card__price"><span class="product-card__price-current">₹4,299</span> <span class="product-card__price-old">₹5,499</span></p>
+                                        <a class="btn btn-sm btn-dark" href="cart.html">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col">
+                            <div class="product-card">
+                                <a class="product-card__image-link" href="product.html#leather-tote-bag">
+                                    <img src="../images/products/tote-bag.jpg" alt="Structured leather tote bag in tan" class="product-card__image" loading="lazy">
+                                </a>
+                                <div class="product-card__body">
+                                    <h3 class="product-card__title"><a href="product.html#leather-tote-bag">Leather Tote Bag</a></h3>
+                                    <p class="product-card__category">Accessories · Bags · Heritage</p>
+                                    <p class="shop-rating" aria-label="Rated 4.3 out of 5 stars">★★★★☆ <span>4.3</span></p>
+                                    <div class="product-card__footer">
+                                        <p class="product-card__price"><span class="product-card__price-current">₹1,799</span></p>
+                                        <a class="btn btn-sm btn-dark" href="cart.html">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col">
+                            <div class="product-card">
+                                <a class="product-card__image-link" href="product.html#silk-embroidered-kurta">
+                                    <img src="../images/categories/ethnic.jpg" alt="Embroidered silk kurta in maroon" class="product-card__image" loading="lazy">
+                                </a>
+                                <div class="product-card__body">
+                                    <h3 class="product-card__title"><a href="product.html#silk-embroidered-kurta">Silk Embroidered Kurta</a></h3>
+                                    <p class="product-card__category">Ethnic · Kurtas · Vastraa</p>
+                                    <p class="shop-rating" aria-label="Rated 4.6 out of 5 stars">★★★★☆ <span>4.6</span></p>
+                                    <div class="product-card__footer">
+                                        <p class="product-card__price"><span class="product-card__price-current">₹2,199</span></p>
+                                        <a class="btn btn-sm btn-dark" href="cart.html">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col">
+                            <div class="product-card">
+                                <a class="product-card__image-link" href="product.html#slim-fit-cotton-shirt">
+                                    <img src="../images/categories/men.jpg" alt="Slim fit cotton shirt in navy blue" class="product-card__image" loading="lazy">
+                                </a>
+                                <div class="product-card__body">
+                                    <h3 class="product-card__title"><a href="product.html#slim-fit-cotton-shirt">Slim Fit Cotton Shirt</a></h3>
+                                    <p class="product-card__category">Men · Shirts · Urban Edge</p>
+                                    <p class="shop-rating" aria-label="Rated 4.2 out of 5 stars">★★★★☆ <span>4.2</span></p>
+                                    <div class="product-card__footer">
+                                        <p class="product-card__price"><span class="product-card__price-current">₹1,499</span></p>
+                                        <a class="btn btn-sm btn-dark" href="cart.html">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col">
+                            <div class="product-card">
+                                <a class="product-card__image-link" href="product.html#floral-midi-skirt">
+                                    <img src="../images/categories/women.jpg" alt="Floral midi skirt in pastel tones" class="product-card__image" loading="lazy">
+                                </a>
+                                <div class="product-card__body">
+                                    <h3 class="product-card__title"><a href="product.html#floral-midi-skirt">Floral Midi Skirt</a></h3>
+                                    <p class="product-card__category">Women · Skirts · Vastraa</p>
+                                    <p class="shop-rating" aria-label="Rated 4.4 out of 5 stars">★★★★☆ <span>4.4</span></p>
+                                    <div class="product-card__footer">
+                                        <p class="product-card__price"><span class="product-card__price-current">₹1,899</span></p>
+                                        <a class="btn btn-sm btn-dark" href="cart.html">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col">
+                            <div class="product-card">
+                                <a class="product-card__image-link" href="product.html#classic-leather-loafers">
+                                    <img src="../images/categories/footwear.jpg" alt="Brown leather loafers" class="product-card__image" loading="lazy">
+                                </a>
+                                <div class="product-card__body">
+                                    <h3 class="product-card__title"><a href="product.html#classic-leather-loafers">Classic Leather Loafers</a></h3>
+                                    <p class="product-card__category">Footwear · Formal · Classic Line</p>
+                                    <p class="shop-rating" aria-label="Rated 4.9 out of 5 stars">★★★★★ <span>4.9</span></p>
+                                    <div class="product-card__footer">
+                                        <p class="product-card__price"><span class="product-card__price-current">₹3,499</span></p>
+                                        <a class="btn btn-sm btn-dark" href="cart.html">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <nav class="shop-pagination" aria-label="Product pages">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="shop.html" aria-label="Previous page" tabindex="-1" aria-disabled="true">Previous</a>
+                            </li>
+                            <li class="page-item active" aria-current="page">
+                                <a class="page-link" href="shop.html">1</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="shop.html?page=2">2</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="shop.html?page=3">3</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="shop.html?page=2" aria-label="Next page">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer py-4 border-top">
+        <div class="container text-center">
+            <p class="site-footer__brand mb-1">Vastraa</p>
+            <p class="site-footer__copy mb-0">&copy; 2026 Vastraa. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View product details, images, sizes, delivery options, and customer ratings at Vastraa.">
+    <title>Vastraa | Product Details</title>
+    <link rel="stylesheet" href="../css/bootstrap (1).css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/product.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom" aria-label="Main navigation">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-uppercase" href="index.html">Vastraa</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="product.html" aria-current="page">Product Details</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                        <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="checkout.html">Checkout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="product-page">
+        <section class="product-hero" aria-labelledby="product-heading">
+            <div class="container">
+                <p class="product-hero__text">Home / Women / Dresses</p>
+                <h1 id="product-heading" class="product-hero__title">Linen Wrap Dress</h1>
+            </div>
+        </section>
+
+        <section class="product-detail py-4 py-lg-5" aria-label="Product details">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="product-gallery">
+                            <figure id="gallery-main" class="product-gallery__figure">
+                                <img src="../images/products/linen-dress.jpg" alt="Linen wrap dress front view" class="product-gallery__image">
+                            </figure>
+                            <div class="row row-cols-4 g-3 product-gallery__thumbs">
+                                <div class="col">
+                                    <a class="product-gallery__thumb" href="#gallery-main">
+                                        <img src="../images/products/linen-dress.jpg" alt="Dress front view" class="product-gallery__thumb-image">
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a class="product-gallery__thumb" href="#gallery-side">
+                                        <img src="../images/categories/women.jpg" alt="Dress styled view" class="product-gallery__thumb-image">
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a class="product-gallery__thumb" href="#gallery-detail">
+                                        <img src="../images/promo/summer.jpg" alt="Dress fabric detail" class="product-gallery__thumb-image">
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a class="product-gallery__thumb" href="#gallery-look">
+                                        <img src="../images/promo/premium.jpg" alt="Dress lookbook view" class="product-gallery__thumb-image">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row row-cols-1 row-cols-sm-3 g-3 product-gallery__more">
+                                <div class="col">
+                                    <figure id="gallery-side" class="product-gallery__small">
+                                        <img src="../images/categories/women.jpg" alt="Linen wrap dress styled with accessories" class="product-gallery__small-image" loading="lazy">
+                                    </figure>
+                                </div>
+                                <div class="col">
+                                    <figure id="gallery-detail" class="product-gallery__small">
+                                        <img src="../images/promo/summer.jpg" alt="Close look at linen fabric and summer styling" class="product-gallery__small-image" loading="lazy">
+                                    </figure>
+                                </div>
+                                <div class="col">
+                                    <figure id="gallery-look" class="product-gallery__small">
+                                        <img src="../images/promo/premium.jpg" alt="Linen dress in premium lookbook setting" class="product-gallery__small-image" loading="lazy">
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <article class="product-summary">
+                            <p class="product-summary__category">Women &middot; Dresses &middot; Vastraa</p>
+                            <h2 class="product-summary__title">Linen Blend Wrap Dress</h2>
+                            <p class="product-summary__rating" aria-label="Rated 4.8 out of 5 stars">
+                                <span aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                                <span class="product-summary__rating-count">4.8 | 1,284 ratings</span>
+                            </p>
+                            <p class="product-summary__price"><span class="product-summary__price-current">&#8377;2,499</span> <span class="product-summary__price-old">&#8377;3,199</span></p>
+                            <p class="product-summary__text">A breathable linen blend dress with a soft wrap fit, side tie detail, and easy day-to-evening shape.</p>
+
+                            <form class="product-options" action="cart.html" method="get">
+                                <fieldset class="product-options__group">
+                                    <legend class="product-options__title">Select Size</legend>
+                                    <div class="product-options__choices">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="size" id="size-xs" value="xs">
+                                            <label class="form-check-label" for="size-xs">XS</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="size" id="size-s" value="s">
+                                            <label class="form-check-label" for="size-s">S</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="size" id="size-m" value="m" checked>
+                                            <label class="form-check-label" for="size-m">M</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="size" id="size-l" value="l">
+                                            <label class="form-check-label" for="size-l">L</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="size" id="size-xl" value="xl">
+                                            <label class="form-check-label" for="size-xl">XL</label>
+                                        </div>
+                                    </div>
+                                </fieldset>
+
+                                <fieldset class="product-options__group">
+                                    <legend class="product-options__title">Quantity</legend>
+                                    <label class="visually-hidden" for="quantity">Quantity</label>
+                                    <select class="form-select product-options__select" id="quantity" name="quantity">
+                                        <option value="1" selected>1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </fieldset>
+
+                                <div class="product-actions">
+                                    <button type="submit" class="btn btn-dark btn-lg">Add to Cart</button>
+                                    <a class="btn btn-outline-dark btn-lg" href="checkout.html">Buy Now</a>
+                                </div>
+                            </form>
+
+                            <form class="pincode-checker" action="product.html" method="get">
+                                <label class="pincode-checker__label" for="pincode">Check Delivery</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="pincode" name="pincode" placeholder="Enter pincode" aria-label="Enter pincode">
+                                    <button class="btn btn-outline-dark" type="submit">Check</button>
+                                </div>
+                                <p class="pincode-checker__text">Free delivery on eligible pincodes. Estimated delivery in 3-5 days.</p>
+                            </form>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-info py-5 bg-light" aria-labelledby="details-heading">
+            <div class="container">
+                <div class="row g-4">
+                    <article class="col-lg-6">
+                        <div class="product-panel">
+                            <h2 id="details-heading" class="product-panel__title">Product Details</h2>
+                            <ul class="product-panel__list mb-0">
+                                <li>Linen blend fabric with soft cotton lining</li>
+                                <li>Wrap neckline with adjustable side tie</li>
+                                <li>Midi length and regular fit</li>
+                                <li>Machine wash with similar colors</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="col-lg-6">
+                        <div class="product-panel">
+                            <h2 class="product-panel__title">Ratings Breakdown</h2>
+                            <div class="rating-summary">
+                                <div class="rating-summary__score">
+                                    <span class="rating-summary__number">4.8</span>
+                                    <span aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                                    <p>Based on 1,284 ratings</p>
+                                </div>
+                                <ul class="rating-bars list-unstyled mb-0">
+                                    <li class="rating-bars__item">
+                                        <span class="rating-bars__label">5 Star</span>
+                                        <div class="rating-bars__track"><span class="rating-bars__fill rating-bars__fill--five"></span></div>
+                                        <span class="rating-bars__percent">78%</span>
+                                    </li>
+                                    <li class="rating-bars__item">
+                                        <span class="rating-bars__label">4 Star</span>
+                                        <div class="rating-bars__track"><span class="rating-bars__fill rating-bars__fill--four"></span></div>
+                                        <span class="rating-bars__percent">16%</span>
+                                    </li>
+                                    <li class="rating-bars__item">
+                                        <span class="rating-bars__label">3 Star</span>
+                                        <div class="rating-bars__track"><span class="rating-bars__fill rating-bars__fill--three"></span></div>
+                                        <span class="rating-bars__percent">4%</span>
+                                    </li>
+                                    <li class="rating-bars__item">
+                                        <span class="rating-bars__label">2 Star</span>
+                                        <div class="rating-bars__track"><span class="rating-bars__fill rating-bars__fill--two"></span></div>
+                                        <span class="rating-bars__percent">1%</span>
+                                    </li>
+                                    <li class="rating-bars__item">
+                                        <span class="rating-bars__label">1 Star</span>
+                                        <div class="rating-bars__track"><span class="rating-bars__fill rating-bars__fill--one"></span></div>
+                                        <span class="rating-bars__percent">1%</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer py-4 border-top">
+        <div class="container text-center">
+            <p class="site-footer__brand mb-1">Vastraa</p>
+            <p class="site-footer__copy mb-0">&copy; 2026 Vastraa. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
